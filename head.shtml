@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121811629-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121811629-1');
+    </script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/xjc6kpv.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACEFILLER – constructing algorithmic playground</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="top grid-center grid-bottom">
+      <div class="col-5 col_sm-12"><a href="/"><img src="/logo-one-line.svg" id="biglogo" /></a></div>
+      <div class="col-5 col_sm-12">
+        <ul class="menu">
+          <li><a href="/index.shtml">Work</a></li>
+          <li><a href="/bio.shtml">About</a></li>
+          <li><a href="/cv.pdf">CV</a></li>
+          <li><a href="mailto:hello@spacefiller.space">Email</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">

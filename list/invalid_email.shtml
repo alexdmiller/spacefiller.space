@@ -1,0 +1,9 @@
+<!--#include virtual="/head.shtml" -->
+
+<h2>Invalid email</h2>
+
+<div class="section">
+  The email address you entered is not valid.
+</div>
+
+<!--#include virtual="/tail.shtml" -->

@@ -1,0 +1,9 @@
+<!--#include virtual="/head.shtml" -->
+
+<h2>Confirmation link sent</h2>
+
+<div class="section">
+  A confirmation link has been sent to your email address. Click the link to subscribe to our newsletter.
+</div>
+
+<!--#include virtual="/tail.shtml" -->

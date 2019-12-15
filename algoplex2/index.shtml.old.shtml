@@ -1,0 +1,77 @@
+<!--#include virtual="../head.shtml" -->
+
+<h2>ALGOPLEX II</h2>
+
+
+<div style="width: 100%; padding-top: 56%; position: relative">
+  <div style="position:absolute; top: 0; left: 0; right: 0; bottom: 0">
+    <iframe src="https://player.vimeo.com/video/237993448" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="photo-section">
+  <img src="image1.jpg" />
+</div>
+
+<div class="photo-section">
+  <img src="image2.jpg" />
+</div>
+
+<div class="photo-section">
+  <img src="image3.jpg" />
+</div>
+
+<div class="photo-section">
+  <img src="image4.jpg" />
+</div>
+
+<div class="photo-section">
+  <img src="image5.jpg" />
+</div>
+
+<div class="photo-section">
+  <img src="image6.jpg" />
+</div>
+
+<div class="section">
+  <p>
+    <em>ALGOPLEX II</em> is an interactive installation that explores the boundary between chaos and order. It consists of three elements:
+  </p>
+
+  <ol>
+    <li>a vertical geometric grid structure (the "lattice”);</li>
+    <li>a digital projection cast onto the lattice;</li>
+    <li>a control panel situated in front of the lattice.</li>
+  </ol>
+
+  <p>
+    The projected scenes are generated in real time by parameterized algorithms, which can be manipulated using knobs on the control panel. As the user changes parameters, the scenes react in unexpected ways — sometimes falling into ordered patterns, sometimes blowing up in fragmented chaos. Each scene is based on a mathematical concept or a simulated model of nature (for example, simulated bird flocking).
+  </p>
+  <p>
+    The lattice consists of a regular grid of concave pyramids to which the generated graphics are precisely projection-mapped. The lattice's patterned terrain organizes the visual field. Its geometry distorts and reflects the projected light, causing illusions of depth and motion.
+  </p>
+  <p>
+    <em>ALGOPLEX II</em> invites the viewer to navigate a pleasantly disorienting algorithmic playground, and in the process discover the mysterious world that lives between natural order and chaos.
+  </p>
+
+  <h3>Credits</h3>
+
+  <p>
+    Concept, fabrication and programming — Alexander Nagy and Alexander Miller
+  </p>
+
+  <p>
+    Controller fabrication — William Gibbs
+  </p>
+
+  <p>
+    Technical assistance — Abraham Miller
+  </p>
+
+  <p>
+    Thanks to Trevor Brown, Kevin Blanquies, Joshua Chin, Chloe Gilstrap, Sharon Arnold, Tim Pfeiffer and Steve Hoedemaker.
+  </p>
+
+</div>
+
+<!--#include virtual="../tail.shtml" -->

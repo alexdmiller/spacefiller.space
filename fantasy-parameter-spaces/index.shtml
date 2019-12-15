@@ -1,0 +1,97 @@
+<!--#include virtual="/head.shtml" -->
+
+<div class="grid">
+  <div class="col-6 col_sm-12">
+    <h2>Fantasy Parameter Spaces</h2>
+  </div>
+
+  <div class="col-3 info">
+    <p>Glass Box Gallery</p>
+  </div>
+  <div class="col-3 info">
+    <p>2019</p>
+  </div>
+
+  <div class="col-12">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377697290?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+
+  <div class="col-6 col_sm-12">
+    <p>
+      <em>Fantasy Parameter Spaces</em> is SPACEFILLER's first solo gallery show and presents work from their past two years of collaboration, from their first piece (<em>ALGOPLEX I</em>) to brand new projects (<em>Particle Collider</em>). Each piece invites the viewer to manipulate the laws of physics of a miniature make-believe universe in order to discover the boundary between stable and chaotic states of nature.
+    </p>
+  </div>
+
+  <div class="col-12 col_md-12">
+  <img src="image5_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+  <img src="image8_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+    <img src="image1_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+    <img src="image2_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+    <img src="image3_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+  <img src="image6_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+  <img src="image7_small.jpg" />
+  </div>
+
+
+  <div class="col-12 col_md-12">
+  <img src="image9_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+  <img src="image10_small.jpg" />
+  </div>
+
+  <div class="col-12 col_md-12">
+  <img src="image11_small.jpg" />
+  </div>
+
+  <div class="col-6 col_sm-12">
+    <h3>Press</h3>
+
+    <ul>
+      <li><a href="https://www.thestranger.com/visual-art/2019/10/09/41625048/tactile-sculptures-of-light-and-sound">Tactile Sculptures of Light and Sound</a></li>
+      <li><a href="https://www.thestranger.com/things-to-do/2019/09/04/41290236/the-top-9-pioneer-square-art-shows-to-check-out-in-september-2019">The Top 10 Pioneer Square Art Shows to Check Out in September 2019</a></li>
+      <li><a href="http://vanguardseattle.com/2019/10/03/first-thursday-art-walk-gallery-guide-october-2019/">First Thursday Art Walk Gallery Guide: October 2019</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col_sm-12">
+    <h3>Sponsors</h3>
+    <ul>
+      <li>Funding provided by <a href="http://artisttrust.org/">Artist Trust</a>
+      <li>Holographic displays provided by <a href="http://lookingglassfactory.com/">Looking Glass Factory</a>
+      <li>3D graphics for <em>Terminal #2</em> powered by <a href="http://shaderpark.com">Shaderpark</a></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col_sm-12">
+   <h3>Credits</h3>
+    <ul>
+      <li>SPACEFILLER is Alexander MIller & Alexander Nagy</li>
+      <li>Sound Design: <a href="https://mkmarchan.github.io/">Mick Marchan</a></li>
+      <li>3D Graphics Programming: <a href="http://peterwhidden.webflow.io/">Peter Whidden</a></li>
+      <li>Fabrication: <a href="https://www.mmicroindustries.com/">William Gibbs</a></li>
+      <li>Exhibition Design: <a href="https://www.linkedin.com/in/giancarlo-cateriano-a7b09b129">Giancarlo Cateriano</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--#include virtual="/tail.shtml" --> 

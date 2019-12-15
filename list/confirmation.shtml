@@ -1,0 +1,9 @@
+<!--#include virtual="/head.shtml" -->
+
+<h2>You've subscribed!</h2>
+
+<div class="section">
+  Thanks for joining our newsletter list. Remember if you ever get sick of us, you can <<a href="unsubscribe.shtml">unsubscribe</a>.
+</div>
+
+<!--#include virtual="/tail.shtml" -->

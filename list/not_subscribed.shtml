@@ -1,0 +1,9 @@
+<!--#include virtual="/head.shtml" -->
+
+<h2>Not subscribed</h2>
+
+<div class="section">
+  The email address you entered is not on our newsletter list.
+</div>
+
+<!--#include virtual="/tail.shtml" -->

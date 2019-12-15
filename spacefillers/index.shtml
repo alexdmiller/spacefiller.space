@@ -1,0 +1,55 @@
+<!--#include virtual="../head.shtml" -->
+
+<h2>Spacefillers</h2>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/277340623" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<div class="photo-section">
+    <img src="image1.png">
+</div>
+
+<div class="section">
+  <p>
+    <em>Spacefillers</em> is a self-titled audiovisual sculpture. Initially installed at <a href="https://specialist.gallery">Specialist Gallery</a> in Seattle, WA, it was most recently shown at <a href="https://www.blancspacepdx.com">Blanc Space</a> in Portland, OR. The piece consists of nine crystal clusters made from laser cut Acrylic, Mylar and electronics.
+  </p>
+
+  <p>
+    The music for the installation has no beginning or end — it's generated on the fly algorithmically. Each crystal cluster follows its own musical improvisation algorithm, producing an ever-shifting song stretching into infinity. Sometimes they find a beautiful musical moment; sometimes, chaos.
+  </p>
+
+  <h3>A false epiphany</h3>
+
+  <p>
+    A failed theory of physics inspired the geometry for <em>Spacefillers</em>.
+  </p>
+
+  <p>
+    In the late 19th century, physicists postulated that empty space wasn't actually empty — instead, space was believed to be filled with an infinite luminiferous aether that served as a medium for the propagation of light. In 1887, mathematician Lord Kelvin proposed that the aether was constructed from so-called spacefilling shapes.
+  </p>
+
+  <p>
+    In 1905, Albert Einstein published his paper on special relativity, which made the luminiferous aether theory irrelevant. However, the dream of an all-pervasive geometric pattern that fills our universe and anchors physical phenomena is still tantalizing. <em>Spacefillers</em> imagines that the forgotten spacefilling aether turned out to be a tangible thing, inhabited by singing electromagnetic creatures. These crystal creatures are based on a variation of Lord Kelvin's original geometry called the <a href="https://en.wikipedia.org/wiki/Weaire%E2%80%93Phelan_structure">Weaire–Phelan structure</a>.
+  </p>
+</div>
+
+<div class="section">
+  <h3>Credits</h3>
+
+  <p>
+    Concept, design and programming — Alexander Nagy and Alexander Miller
+  </p>
+
+  <p>
+    Sound design — Alexander Miller and David Hrivnak
+  </p>
+
+  <p>
+    Fabrication consultant – Kate Bailey
+  </p>
+
+  <p>
+    Fabrication volunteers — Steve Geluso, Aaron Griffin, Zach Dimmick, Lance Umble, Whitaker Brand, Melissa Winstanley, Niky Champion, Julia Kernerman, Robyn Miller, Kevin Blanquies, and Tristan Huber
+  </p>
+</div>
+
+<!--#include virtual="../tail.shtml" -->

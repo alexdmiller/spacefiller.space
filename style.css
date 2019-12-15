@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+html, body {
+  background-color: white;
+  font-family: nimbus-sans, Helvetica Neue, helvetica, arial, sans-serif;
+  color: black;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+}
+
+a:link, a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #333;
+}
+
+h1, h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  font-family: nimbus-sans;
+}
+
+
+/* TOP */
+
+.top {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  /*border-bottom: 1px solid #CCC;*/
+  margin: 0;
+  padding: 20px 0px 10px 0px;
+  /*background-color: #FFF;*/
+}
+
+.top img {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+  background-color: #FFF;
+  padding: 5px;
+  font-family: nimbus-sans-extended;
+  font-weight: 400;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 140px 0px 10px 0px;
+}
+
+.content ol {
+  font-size: 2rem;
+}
+
+.content img {
+  width: 100%;
+}
+
+.info {
+  color: #999;
+  font-family: nimbus-sans;
+  display: flex;
+  font-weight: 400;
+}
+
+.info p {
+  align-self: flex-end;
+  font-size: 1.8rem
+}
+
+@media only screen and (max-width: 48rem) {
+  .top img {
+    width: 100%;
+  }
+}
+
+iframe {
+  border: 1px solid #999;
+  background-color: #eee;
+}
+
+.footer {
+  border-top: 2px solid #000;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #999;
+  margin: 50px 0;
+}
+
+h3, h4, h5, h6 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.title {
+  font-style: italic;
+}
+
+p {
+  font-size: 1.8rem;
+  margin: 0.5rem 1rem 1rem 0rem;
+}
+
+.content ul {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem 0;
+
+}
+
+ul {
+  font-size: 2rem;
+}
+
+.space {
+  height: 50px;
+}
+
+@media only screen and (max-width: 48em) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+/*    margin: 0rem 0;*/
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  .content ol {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 0px 10px 10px 10px;
+  }
+
+  .top {
+    position: relative;
+  }
+}

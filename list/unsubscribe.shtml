@@ -1,0 +1,15 @@
+<!--#include virtual="/head.shtml" -->
+
+<h2>Unsubscribe</h2>
+
+<div class="section">
+ <form method="post" action="https://scripts.dreamhost.com/add_list.cgi">
+    <input type="hidden" name="list" value="hello">
+    <input type="hidden" name="domain" value="_spacefiller.space_">
+    <label for="email">Email:</label>
+    <input type="text" name="email" placeholder="Enter a valid email" required>
+    <input type="submit" name="unsub" value="Remove me">
+  </form>
+</div>
+
+<!--#include virtual="/tail.shtml" -->

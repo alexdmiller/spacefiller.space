@@ -1,0 +1,20 @@
+<!--#include virtual="../head.shtml" -->
+
+<h2>Particle Grid</h2>
+
+<div class="section">
+  <p>
+    2018 <br />
+    Ping-pong balls, silicone wire, electronics, algorithms
+  </p>
+</div>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/279560569" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<div class="section">
+  <p>
+    <em>Particle Grid</em> consists of 144 reconfigurable light particles which can be adjusted to form new patterns and surfaces. The grid serves as a generative playground through which the artists can explore light, form and algorithmic animation.
+  </p>
+</div>
+
+<!--#include virtual="../tail.shtml" -->

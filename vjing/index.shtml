@@ -1,0 +1,23 @@
+<!--#include virtual="../head.shtml" -->
+
+<h2>VJing</h2>
+
+<div class="section">
+  <p>
+    VJing describes the practice of realtime visual performance. As VJs, we write custom software to accompany music performances. While performing, we manipulate the parameters of the software live, improvising the visuals along with the music. Venues that we have VJed at include <a href="https://www.seattlesymphony.org/benaroyahall">Benaroya Hall</a>, the <a href="https://henryart.org/">Henry Art Gallery</a>, and the <a href="http://www.georgeamphitheatre.com/">George Amphitheater</a>.
+  </p>
+</div>
+
+<p>
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/211055670" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</p>
+
+<p>
+  <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/239380586" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</p>
+
+<p>
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/185265738" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</p>
+
+<!--#include virtual="../tail.shtml" -->

@@ -1,0 +1,36 @@
+<!--#include virtual="../head.shtml" -->
+
+<h2>X</h2>
+
+<p>
+  August 2018 <br />
+  LEDs, ping-pong balls, electronics
+</p>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/284665410" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<div class="photo-section">
+    <img src="image1.jpg">
+</div>
+
+<div class="photo-section">
+    <img src="image2.jpg">
+</div>
+
+<div class="photo-section">
+    <img src="image3.jpg">
+</div>
+
+<div class="photo-section">
+    <img src="image4.jpg">
+</div>
+
+<div class="section">
+  <p>
+    <em>X</em> is a site-specific installation we created for <a href="http://festivalfestival.art">Festival:Festival</a>. We were asked to
+    make a piece that could live in a dark basement, but that would also be visible from the floor above through a window in the ceiling.
+    The highly symmetrical form and animations were designed to be viewed from the side as well as above. (See video for top-down view.)
+  </p>
+</div>
+
+<!--#include virtual="../tail.shtml" -->

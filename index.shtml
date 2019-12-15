@@ -1,0 +1,71 @@
+<!--#include virtual="head.shtml" -->
+
+<div class="grid">
+  <div class="col-6 col_sm-12">
+  </div>
+
+  <div class="col-6 col_sm-12">
+    <p>
+      SPACEFILLER creates algorithmic playgrounds through computation, light, sound and sculpture.
+    </p>
+  </div>
+
+  <div class="col-12 col_sm-12">
+    <p>
+      <a href="fantasy-parameter-spaces">
+        <img src="fantasy-parameter-spaces/image5_small.jpg">
+        Fantasy Parameter Spaces
+      </a>
+    </p>
+  </div>
+
+  <div class="col-12 col_sm-12">
+    <p>
+      <a href="livingwall">
+        <img src="livingwall/livingwall-21.jpg">
+        Living Walls
+      </a>
+    </p>
+  </div>
+
+  <div class="col-12 col_sm-12">
+    <p>
+      <a href="particlecollider">
+        <img src="particlecollider/particlecollider-10.jpg">
+        Particle Collider
+      </a>
+    </p>
+  </div>
+
+  <div class="col-12 col_sm-12">
+    <p>
+      <a href="mooyoung">
+        <img src="mooyoung/image1.jpg">
+        High Top-ology
+      </a>
+    </p>
+  </div>
+
+  <div class="col-12 col_sm-12">
+    <p>
+      <a href="algoplex1">
+        <img src="algoplex1/hd-34.jpg">
+        Algoplex I
+      </a>
+    </p>
+  </div>
+
+
+  <div class="col-12 col_sm-12">
+    <p>
+      <a href="algoplex2">
+        <img src="algoplex2/hd-4.jpg">
+        Algoplex II
+      </a>
+    </p>
+  </div>
+
+
+</div>
+
+<!--#include virtual="tail.shtml" -->

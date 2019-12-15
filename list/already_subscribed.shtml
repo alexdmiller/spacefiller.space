@@ -1,0 +1,9 @@
+<!--#include virtual="/head.shtml" -->
+
+<h2>Already subscribed</h2>
+
+<div class="section">
+  The email address you entered is already subscribed to our newsletter list.
+</div>
+
+<!--#include virtual="/tail.shtml" -->

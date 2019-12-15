@@ -1,0 +1,135 @@
+<!--#include virtual="/head.shtml" -->
+
+<div class="grid-center">
+  <div class="col-5 col_sm-12">
+    <h2>Living Walls</h2>
+  </div>
+
+  <div class="col-5 info">
+    <p><em>2018 – ongoing</em></p>
+  </div>
+
+  <div class="col-12">
+    <img src="livingwall-21.jpg" />
+  </div>
+
+  <div class="col-12 space"></div>
+
+  <div class="col-5 col_sm-12">
+    <p>
+      Our <strong>Living Walls</strong> are a series of interactive installations based on growth algorithms — computational representations of how living organisms produce form through growth. The plants and organisms interact to produce an emergent ecosystem that lives and dies according to user input.
+    </p>
+  </div>
+
+  <div class="col-5 col_sm-12">
+    <p>
+      We are fascinated by the modeling of natural and chaotic systems through computer code, and the Living Wall series is our most explicit reference yet to simulation of nature. More than just a simulation, though, we believe that the computational beauty of growth is fundamental to nature itself.
+    </p>
+  </div>
+
+  <div class="col-12">
+    <hr/>
+  </div>
+
+  <div class="col-5 col_sm-12">
+    <h3>Living Wall at Vida Apartments</h3>
+  </div>
+
+  <div class="col-5 col_sm-6 info">
+    <p>
+      Permanent installation <br>
+      <em>Installed 2018</em>
+    </p>
+  </div>
+
+  <div class="col-5 col_sm-12">
+    <p>
+      The initial piece was created for the Vida apartment complex in Seattle, WA. In this version of the piece, the digital ecosystem is destroyed by passersby when it detects them using webcams. This piece used large LED panels that are visible in both day and night.
+    </p>
+  </div>
+
+  <div class="col-5"></div>
+
+  <div class="col-12 space"></div>
+
+  <div class="col-12">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377701055?autoplay=1&loop=1&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+
+  <div class="col-12">
+    <hr/>
+  </div>
+
+  <div class="col-5 col_sm-12">
+    <h3>Living Wall with Controller</h3>
+  </div>
+
+  <div class="col-5 col_sm-6 info">
+    <p>
+      Glassbox Gallery <br>
+      <em>September – November, 2019</em>
+    </p>
+  </div>
+
+  <div class="col-5 col_sm-12">
+    <p>
+      Our second Living Wall was built for our art exhibition <a href="/fantasy/parameter/spaces">Fantasy Parameter Spaces</a>. Our goal was to emphasize — in this case, almost humourously — the destructive nature of the interaction. Viewers can press a single red button to activate a black hole in the center of the projected digital garden. When they release the button, the plants and organisms populate again.
+    </p>
+  </div>
+
+  <div class="col-5"></div>
+
+  <div class="col-12 space"></div>
+
+  <div class="col-12">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377703647?autoplay=1&loop=1&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+
+  <div class="col-12">
+    <img src="livingwall-25.jpg" />
+  </div>
+
+  <div class="col-6 col_md-12">
+    <img src="livingwall-20.jpg" />
+  </div>
+
+  <div class="col-6 col_md-12">
+    <img src="livingwall-19.jpg" />
+  </div>
+
+  <div class="col-12">
+    <img src="livingwall-26.jpg" />
+  </div>
+
+  <div class="col-12">
+    <hr/>
+  </div>
+
+
+  <div class="col-5 col_sm-12">
+    <h3>Petri-Panels</h3>
+  </div>
+
+  <div class="col-5 col_sm-6 info">
+    <p>
+      For the Seattle Art Museum <br>
+      <em>December 2019</em>
+    </p>
+  </div>
+
+  <div class="col-5 col_sm-12">
+    <p>
+      In its most recent incarnation, <em>Petri Panels</em>, our Living Wall became an audiovisual synthesizer. Presented at the Seattle Art Museum's <a href="http://www.seattleartmuseum.org/programs-and-learning/public-programs/sam-lights">SAM Lights</a> event, the piece sonifies the birth and death of our digital creatures through algorithmically generated sound by collaborator Mick Marchan. Viewers can trigger panels by pressing buttons on a controller, which allows the simulation to be played like an instrument.
+    </p>
+  </div>
+
+  <div class="col-5 col_sm-12"></div>
+
+  <div class="col-12 space"></div>
+
+  <div class="col-12">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377708593?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+</div>
+
+<!--#include virtual="/tail.shtml" --> 
