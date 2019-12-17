@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="top grid-center grid-bottom">
-      <div class="col-5 col_sm-12"><a href="/"><img src="/logo-one-line.svg" id="biglogo" /></a></div>
+      <div class="col-5 col_sm-11"><a href="/"><img src="/logo-one-line.svg" id="biglogo" /></a></div>
       <div class="col-5 col_sm-12">
         <ul class="menu">
           <li><a href="/index.shtml">Work</a></li>

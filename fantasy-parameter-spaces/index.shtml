@@ -1,6 +1,6 @@
 <!--#include virtual="/head.shtml" -->
 
-<div class="grid">
+<div class="grid-center">
   <div class="col-6 col_sm-12">
     <h2>Fantasy Parameter Spaces</h2>
   </div>
@@ -94,4 +94,4 @@
   </div>
 </div>
 
-<!--#include virtual="/tail.shtml" --> 
+<!--#include virtual="/tail.shtml" -->
