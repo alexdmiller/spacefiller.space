@@ -1,16 +1,17 @@
 <!--#include virtual="/head.shtml" -->
 
 <div class="grid-center">
-  <div class="col-5 col_sm-10 col_xs-11">
+  <div class="col-5 col_md-10 col_xs-11">
     <h2>Living Walls</h2>
   </div>
 
-  <div class="col-5 col_sm-10 col_xs-11 info">
+  <div class="col-5 col_md-10 col_xs-11 info">
     <p><em>2018 – ongoing</em></p>
   </div>
 
   <div class="col-12">
     <img src="livingwall-21.jpg" />
+    Photo by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-12 space"></div>
@@ -54,6 +55,8 @@
 
   <div class="col-12">
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377701055?autoplay=1&loop=1&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    Video by SPACEFILLER.
+
   </div>
 
   <div class="col-12">
@@ -83,10 +86,12 @@
 
   <div class="col-12">
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/377703647?autoplay=1&loop=1&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    Video by <a href="http://www.christianwanderson.com/">Christian W. Anderson</a>.
   </div>
 
   <div class="col-12">
     <img src="livingwall-25.jpg" />
+    Photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-6 col_md-12">
@@ -99,12 +104,12 @@
 
   <div class="col-12">
     <img src="livingwall-26.jpg" />
+    Photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-12">
     <hr/>
   </div>
-
 
   <div class="col-5 col_md-10 col_xs-11">
     <h3>Petri-Panels</h3>

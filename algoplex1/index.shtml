@@ -1,11 +1,11 @@
 <!--#include virtual="/head.shtml" -->
 
-<div class="grid">
-  <div class="col-6 col_sm-12">
+<div class="grid-center">
+  <div class="col-5 col_md-10 col_xs-11">
     <h2>Algoplex I</h2>
   </div>
 
-  <div class="col-6 info">
+  <div class="col-5 col_md-10 col_xs-11 info">
     <p><em>2017 / 2019</em></p>
   </div>
 
@@ -13,7 +13,7 @@
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/378214583?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   </div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <em>Algoplex I</em> is an interactive installation that presents the viewer with an opportunity to explore an algorithmic playground using a custom made controller – the Light Cube. Users are invited to twist and turn the Light Cube. These rotations are mapped to color changes in the cube itself, as well as projected digital graphics.
     </p>
@@ -32,12 +32,13 @@
 
   </div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-12 col_xs-12">
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/277930852?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=true" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
   </div>
 
   <div class="col-12">
+    All photo by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
     <img src="hd-34.jpg" />
   </div>
 
@@ -46,6 +47,7 @@
   </div>
 
   <div class="col-12 col_md-12">
+    All photo by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
     <img src="hd-30.jpg" />
   </div>
 
@@ -55,7 +57,8 @@
 
   <div class="col-6 col_md-12">
     <img src="hd-13.jpg" />
+    All photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 </div>
 
-<!--#include virtual="/tail.shtml" --> 
+<!--#include virtual="/tail.shtml" -->

@@ -1,19 +1,21 @@
 <!--#include virtual="/head.shtml" -->
 
-<div class="grid">
-  <div class="col-6 col_sm-12">
+<div class="grid-center">
+  <div class="col-5 col_md-10 col_xs-11">
     <h2>Particle Collider</h2>
   </div>
 
-  <div class="col-6 info">
+  <div class="col-5 col_md-10 col_xs-11 info">
     <p><em>2019</em></p>
   </div>
 
   <div class="col-12">
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/371007316" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    Video by <a href="http://www.christianwanderson.com/">Christian W. Anderson</a> and SPACEFILLER.
+
   </div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <em>Particle Collider</em> borrows concepts from chaos theory and math to create a delightful playground of light and sound. The trajectories of computer simulated particle streams are projection mapped on an interactive table, rendered as radial lines (like the growth rings of a tree). Adjustable physical sliders on the table allow viewers to manipulate the trajectories of the particle streams, causing them to curve and collide in surprising ways. The motion of the particles is fed through a sound generating algorithm to create a sonic landscape that echos the order and chaos of the particle system.
     </p>
@@ -23,11 +25,11 @@
     </p>
   </div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       The transition zone from order to chaos — called a phase transition by mathematicians — is the heart of <em>Particle Collider</em>. This so called "edge of chaos" permeates our universe, and is fundamental to the nature of computation itself (including to systems like the human brain). With <em>Particle Collider</em>, our goal is to translate the math and science of chaos theory into an immersive experience that viewers can connect with on an intuitive level.
     </p>
-  
+
     <p>
       Sound design by <a href="https://mkmarchan.github.io/">Mick Marchan</a>.
     </p>
@@ -35,6 +37,7 @@
 
   <div class="col-12">
     <img src="particlecollider-7.jpg" />
+    All photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-4 col_md-12">
@@ -51,7 +54,8 @@
 
   <div class="col-12 col_md-12">
     <img src="particlecollider-6.jpg" />
+    All photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 </div>
 
-<!--#include virtual="/tail.shtml" --> 
+<!--#include virtual="/tail.shtml" -->

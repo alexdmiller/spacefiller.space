@@ -1,11 +1,11 @@
 <!--#include virtual="/head.shtml" -->
 
-<div class="grid">
-  <div class="col-6 col_sm-12">
+<div class="grid-center">
+  <div class="col-5 col_md-10 col_xs-11">
     <h2>Algoplex II</h2>
   </div>
 
-  <div class="col-6 info">
+  <div class="col-5 col_md-10 col_xs-11 info">
     <p><em>2017 / 2019</em></p>
   </div>
 
@@ -13,7 +13,7 @@
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/237993448?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
   </div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <em>ALGOPLEX II</em> is an interactive installation that explores the boundary between chaos and order. It consists of three elements:
     </p>
@@ -30,7 +30,7 @@
 
   </div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       The lattice consists of a regular grid of concave pyramids to which the generated graphics are precisely projection-mapped. The lattice's patterned terrain organizes the visual field. Its geometry distorts and reflects the projected light, causing illusions of depth and motion.
     </p>
@@ -44,10 +44,12 @@
 
   <div class="col-12 col_md-12">
     <img src="hd-4.jpg" />
+    Photo by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-6 col_md-12">
     <img src="hd-36.jpg" />
+    Photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-6 col_md-12">
@@ -56,6 +58,7 @@
 
   <div class="col-6 col_md-12">
     <img src="hd-43.jpg" />
+    Photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-6 col_md-12">
@@ -64,6 +67,7 @@
 
   <div class="col-6 col_md-12">
     <img src="hd-47.jpg" />
+    Photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-6 col_md-12">
@@ -72,6 +76,7 @@
 
   <div class="col-6 col_md-12">
     <img src="hd-51.jpg" />
+    Photos by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
   <div class="col-6 col_md-12">
@@ -80,11 +85,13 @@
 
   <div class="col-12 col_md-12">
     <img src="hd-66.jpg" />
+    Photo by <a href="http://anticipationmachine.com/photocommissions">Fritz Rodriguez</a>.
   </div>
 
 
   <div class="col-6 col_md-12">
     <img src="image2.jpg" />
+    Photos by SPACEFILLER.
   </div>
 
   <div class="col-6 col_md-12">
@@ -93,6 +100,7 @@
 
   <div class="col-6 col_md-12">
     <img src="image5.jpg" />
+    Photos by SPACEFILLER.
   </div>
 
   <div class="col-6 col_md-12">
@@ -101,7 +109,11 @@
 
   <div class="col-6 col_md-12">
     <img src="image7.jpg" />
+    Photo by SPACEFILLER.
+  </div>
+
+  <div class="col-6 col_md-12">
   </div>
 </div>
 
-<!--#include virtual="/tail.shtml" --> 
+<!--#include virtual="/tail.shtml" -->

@@ -1,16 +1,16 @@
 <!--#include virtual="head.shtml" -->
 
-<div class="grid">
-  <div class="col-6 col_sm-12">
-  </div>
+<div class="grid-center">
+  <div class="col-12 space"></div>
 
-  <div class="col-6 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       SPACEFILLER creates algorithmic playgrounds through computation, light, sound and sculpture.
     </p>
   </div>
+  <div class="col-5 col_md-10 col_xs-11"></div>
 
-  <div class="col-12 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <a href="fantasy-parameter-spaces">
         <img src="fantasy-parameter-spaces/image5_small.jpg">
@@ -19,7 +19,7 @@
     </p>
   </div>
 
-  <div class="col-12 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <a href="livingwall">
         <img src="livingwall/livingwall-21.jpg">
@@ -28,7 +28,7 @@
     </p>
   </div>
 
-  <div class="col-12 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <a href="particlecollider">
         <img src="particlecollider/particlecollider-10.jpg">
@@ -37,7 +37,7 @@
     </p>
   </div>
 
-  <div class="col-12 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <a href="mooyoung">
         <img src="mooyoung/image1.jpg">
@@ -46,7 +46,7 @@
     </p>
   </div>
 
-  <div class="col-12 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <a href="algoplex1">
         <img src="algoplex1/hd-34.jpg">
@@ -56,7 +56,7 @@
   </div>
 
 
-  <div class="col-12 col_sm-12">
+  <div class="col-5 col_md-10 col_xs-11">
     <p>
       <a href="algoplex2">
         <img src="algoplex2/hd-4.jpg">
@@ -65,6 +65,7 @@
     </p>
   </div>
 
+  <div class="col-5 col_md-10 col_xs-11"></div>
 
 </div>
 

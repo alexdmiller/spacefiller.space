@@ -2,12 +2,12 @@
 
      <div class="footer">
       <div class="grid-center">
-        <div class="col-5 col_sm-12">
+        <div class="col-5 col_md-10 col_xs-11">
           <p>
             Copyright SPACEFILLER 2018-2019
           </p>
         </div>
-        <div class="col-5 col_sm-12">
+        <div class="col-5 col_md-10 col_xs-11">
           <p>
             <a href="mailto:hello@spacefiller.space">
               Email

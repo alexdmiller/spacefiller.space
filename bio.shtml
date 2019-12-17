@@ -1,12 +1,9 @@
 <!--#include virtual="head.shtml" -->
 
-
-<div class="grid">
-  <div class="col-6 col_sm-12">
+<div class="grid-center">
+  <div class="col-12 space"></div>
+  <div class="col-5 col_md-10 col_xs-11">
     <img src="images/us.png" />
-  </div>
-
-  <div class="col-6 col_sm-12">
     <p>
         SPACEFILLER consists of artists Alexander Nagy and Alexander Miller, and is the result of their long time collaboration and pursuit of visual art, music, programming and math. They reside in Seattle, WA.
       </p>
@@ -18,6 +15,7 @@
       <p>
         The name SPACEFILLER is a reference to a <a href="http://www.conwaylife.com/wiki/Spacefiller">pattern in Conway's Game of Life</a>. The Game of Life is a mathematical model that displays emergent behavior. The name also relates to the artists' desire to create immersive, disorienting spaces filled with light.
       </p>
-    </div>
+  </div>
+</div>
 
 <!--#include virtual="tail.shtml" -->
