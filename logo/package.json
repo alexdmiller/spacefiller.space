@@ -1,0 +1,13 @@
+{
+  "name": "logo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/matter-js": "^0.14.5",
+    "matter-js": "^0.14.2"
+  }
+}
