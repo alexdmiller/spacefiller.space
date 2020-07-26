@@ -1,0 +1,47 @@
+# &#x1F4B2; 4th of July donation drive
+
+7/4/20 &mdash; [DONATE](https://chiefseattleclub.z2systems.com/np/clients/chiefseattleclub/donation.jsp?campaign=48)
+
+For every $1 donated to the [Chief Seattle Club](https://www.chiefseattleclub.org/), we will match $5 until we reach $1000 in donations. Help us reach a total of $6000! Send a receipt of your donation to [@space.filler.art](instagram.com/space.filler.art/) on Instagram, or email it to
+[hello@spacefiller.space](mailto:hello@spacefiller.space).
+
+The intention with this drive is to raise awareness and resources for local Indigenous people during the July 4th holiday. As nonnative residents living in the Seattle area, we're taking the weekend to financially support the original inhabitants of this land.
+
+Located in downtown Seattle, Chief Seattle Club's day center provides resources for homeless Natives to have a hot meal, find primary care, acquire legal help and search for permanent housing. On a daily basis, Chief Seattle Club empowers Natives enduring physical, mental and spiritual hardship.
+
+## &#x2139;&#xFE0F;&nbsp; Basic info
+
+**Duration**: Noon (PST), 7/4/20 &mdash; Noon, 7/6/20
+
+**Match**: A $5 to $1 match for all donations to [Chief Seattle Club](https://www.chiefseattleclub.org/).
+
+**Limit**: The 5:1 match stays active until we reach $1000. If we pass the $1000 mark, we may be able to match the extra amount at less than a 5:1 ratio, but this is not guaranteed.
+
+**How to get matched?**: Send a screen shot of a donation receipt to
+[@space.filler.art](instagram.com/space.filler.art/) on Instagram, or email it to
+[hello@spacefiller.space](mailto:hello@spacefiller.space). After the donation drive is over, we will
+tabulate the received donation receipts and apply our match. We'll post a break down of the grand
+totals to our instagram and upload it here.
+
+## &#x1F3E2;&nbsp; Why this organization?
+
+A substantial portion of the match for this drive is coming from a corporate sponsor limiting us to a pre-approved list of organizations. In order to maximize our impact, we chose a single organization from this list that benefits local Native People in the Seattle region. Our criteria for choosing Chief Seattle Club includes:
+
+-   **Specifically benefits Indigenous people.**
+
+    Chief Seattle Club has a clearly articulated mission to support American Indian and Alaska Native people in Seattle. Their primary focus of housing and homeless prevention provide a concrete benefit Seattle's Indigenous population. They run a day center in downtown Seattle, as well as housing projects. We think their "Eagle Village" modular building project is cool.
+
+-   **Local to Seattle**
+
+    As residents of Seattle, we acknowledge that we live on stolen land. We think the Treaty of Elliott Point was unfair, and even that was not upheld by the white colonizers. Therefore we think it's important to direct our focus to local Indigenous peoples.
+
+-   **Native leadership & staff**
+
+    Chief Seattle Club is almost entirely Native lead and staffed by Indigenous people. 85% of their board are of Native American descent.
+
+## &#x2709;&#xFE0F;&nbsp; Feedback?
+
+- Email us at [hello@spacefiller.space](mailto:hello@spacefiller.space)
+- Send us a message on Instagram: [@space.filler.art](https://www.instagram.com/space.filler.art/)
+
+Match funded and organized by Jolyn Yao, Alex Nagy, Alex Miller and an anonymous donor. Thanks to Ben Roth and Grace Miller for research and logistics help.
