@@ -12199,26 +12199,37 @@ function getLogo() {
             sections = letters[i].getElementsByTagName("path");
 
             _loop_1 = function _loop_1(j) {
-              var points = matter_js_1.Svg.pathToVertices(sections[j], 2);
+              var len = sections[j].getTotalLength();
+              var points = [];
+
+              for (var t = 0; t < len; t += 5) {
+                var p = sections[j].getPointAtLength(t);
+                points.push(p);
+              }
+
               var center = {
                 x: 0,
                 y: 0
               };
               points.forEach(function (p) {
+                p.x += 300;
+                p.y += 300;
                 center.x += p.x;
                 center.y += p.y;
               });
               center.x /= points.length;
               center.y /= points.length;
-              center.x += 300;
-              center.y += 300;
+              console.log(center); // center.x += 300;
+              // center.y += 300;
+
               var body = matter_js_1.Bodies.fromVertices(center.x, center.y, [points], {
                 render: {
                   fillStyle: "#556270",
                   strokeStyle: "#556270",
                   lineWidth: 2
                 }
-              }, true);
+              }, true); //      body.isStatic = true;
+
               console.log(body.position);
               matter_js_1.World.add(engine.world, body);
             };
@@ -12242,6 +12253,17 @@ engine.world.gravity = {
   y: 0,
   scale: 0
 };
+var mouse = matter_js_1.Mouse.create(render.canvas),
+    mouseConstraint = matter_js_1.MouseConstraint.create(engine, {
+  mouse: mouse,
+  constraint: {
+    stiffness: 0.2,
+    render: {
+      visible: false
+    }
+  }
+});
+matter_js_1.World.add(world, mouseConstraint);
 matter_js_1.Engine.run(engine);
 matter_js_1.Render.run(render);
 },{"poly-decomp":"../node_modules/poly-decomp/src/index.js","matter-js":"../node_modules/matter-js/build/matter.js","./logo.svg":"logo.svg","pathseg":"../node_modules/pathseg/pathseg.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -12272,7 +12294,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51258" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53303" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
