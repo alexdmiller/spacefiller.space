@@ -11141,8 +11141,8 @@ var Vector = _dereq_('../geometry/Vector');
 },{"../body/Composite":2,"../core/Common":14,"../core/Events":16,"../geometry/Bounds":26,"../geometry/Vector":28}]},{},[30])(30)
 });
 
-},{}],"logo-display.svg":[function(require,module,exports) {
-module.exports = "/logo-display.2e0cdca9.svg";
+},{}],"logo-physics.svg":[function(require,module,exports) {
+module.exports = "/logo-physics.e27dffb7.svg";
 },{}],"../node_modules/pathseg/pathseg.js":[function(require,module,exports) {
 // SVGPathSeg API polyfill
 // https://github.com/progers/pathseg
@@ -12154,7 +12154,7 @@ var poly_decomp_1 = __importDefault(require("poly-decomp"));
 
 var matter_js_1 = require("matter-js");
 
-var logo_display_svg_1 = __importDefault(require("./logo-display.svg"));
+var logo_physics_svg_1 = __importDefault(require("./logo-physics.svg"));
 
 require("pathseg");
 
@@ -12191,14 +12191,14 @@ getLogo();
 
 function getLogo() {
   return __awaiter(this, void 0, void 0, function () {
-    var logoResponse, logoSource, parser, doc, letters, i, sections, _loop_1, j;
+    var logoResponse, logoSource, parser, doc, letters, i, letter, sections, sectionBodies, _loop_1, j;
 
     return __generator(this, function (_a) {
       switch (_a.label) {
         case 0:
           return [4
           /*yield*/
-          , fetch(logo_display_svg_1.default)];
+          , fetch(logo_physics_svg_1.default)];
 
         case 1:
           logoResponse = _a.sent();
@@ -12213,8 +12213,9 @@ function getLogo() {
           letters = doc.getElementsByTagName("g")[0].children;
 
           for (i = 0; i < letters.length; i++) {
-            console.log(letters[i]);
-            sections = letters[i].getElementsByTagName("path");
+            letter = letters[i];
+            sections = letter.getElementsByTagName("path");
+            sectionBodies = [];
 
             _loop_1 = function _loop_1(j) {
               var len = sections[j].getTotalLength();
@@ -12237,23 +12238,56 @@ function getLogo() {
               });
               center.x /= points.length;
               center.y /= points.length;
-              console.log(center); // center.x += 300;
-              // center.y += 300;
-
-              var body = matter_js_1.Bodies.fromVertices(center.x, center.y, [points], {
+              console.log(i);
+              sectionBodies.push(matter_js_1.Bodies.fromVertices(center.x, center.y, [points], {
                 render: {
                   fillStyle: "#556270",
                   strokeStyle: "#556270",
                   lineWidth: 2
+                },
+                isStatic: false,
+                collisionFilter: {
+                  group: -1 * (i + 1)
                 }
-              }, true); //      body.isStatic = true;
-
-              console.log(body.position);
-              matter_js_1.World.add(engine.world, body);
+              }, true));
             };
 
             for (j = 0; j < sections.length; j++) {
               _loop_1(j);
+            }
+
+            matter_js_1.World.add(engine.world, sectionBodies);
+
+            switch (letter.id) {
+              case "S":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: -15,
+                    y: 10
+                  },
+                  bodyB: sectionBodies[2],
+                  pointB: {
+                    x: -15,
+                    y: -15
+                  },
+                  stiffness: 0.2,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[2],
+                  pointA: {
+                    x: 15,
+                    y: 15
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: 15,
+                    y: -10
+                  },
+                  stiffness: 0.2,
+                  length: 0
+                })]);
+                break;
             }
           }
 
@@ -12264,7 +12298,7 @@ function getLogo() {
     });
   });
 }
-},{"poly-decomp":"../node_modules/poly-decomp/src/index.js","matter-js":"../node_modules/matter-js/build/matter.js","./logo-display.svg":"logo-display.svg","pathseg":"../node_modules/pathseg/pathseg.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"poly-decomp":"../node_modules/poly-decomp/src/index.js","matter-js":"../node_modules/matter-js/build/matter.js","./logo-physics.svg":"logo-physics.svg","pathseg":"../node_modules/pathseg/pathseg.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12292,7 +12326,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62291" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55482" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

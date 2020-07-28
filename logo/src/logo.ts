@@ -1,7 +1,7 @@
 
 import decomp from "poly-decomp";
-import { Engine, Render, Bodies, World, Svg, Vertices, Mouse, MouseConstraint } from "matter-js";
-import logoPath from "./logo-display.svg";
+import { Engine, Render, Bodies, World, Svg, Vertices, Mouse, MouseConstraint, Constraint } from "matter-js";
+import logoPath from "./logo-physics.svg";
 import "pathseg";
 
 window.decomp = decomp;
@@ -48,8 +48,9 @@ async function getLogo() {
   const letters = doc.getElementsByTagName("g")[0].children;
 
   for (let i = 0; i < letters.length; i++) {
-    console.log(letters[i]);
-    const sections = letters[i].getElementsByTagName("path");
+    const letter = letters[i];
+    const sections = letter.getElementsByTagName("path");
+    const sectionBodies = [];
     for (let j = 0; j < sections.length; j++) {
       const len = sections[j].getTotalLength();
       let points = [];
@@ -68,25 +69,44 @@ async function getLogo() {
       });
       center.x /= points.length;
       center.y /= points.length;
-
-      console.log(center);
-
-      // center.x += 300;
-      // center.y += 300;
-
-      const body = Bodies.fromVertices(center.x, center.y, [points], {
+      console.log(i);
+      sectionBodies.push(Bodies.fromVertices(center.x, center.y, [points], {
         render: {
           fillStyle: "#556270",
           strokeStyle: "#556270",
           lineWidth: 2
-        }
-      }, true)
-      //      body.isStatic = true;
-
-      console.log(body.position);
-
-      World.add(engine.world, body);
+        },
+        isStatic: false,
+        collisionFilter: { group: -1 * (i + 1) }
+      }, true));
     }
+
+    World.add(engine.world, sectionBodies);
+
+    switch (letter.id) {
+      case "S":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: -15, y: 10 },
+            bodyB: sectionBodies[2],
+            pointB: { x: -15, y: -15 },
+            stiffness: 0.2,
+            length: 0
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[2],
+            pointA: { x: 15, y: 15 },
+            bodyB: sectionBodies[1],
+            pointB: { x: 15, y: -10 },
+            stiffness: 0.2,
+            length: 0
+          })
+        ]);
+
+        break;
+    }
+
   }
 }
 
