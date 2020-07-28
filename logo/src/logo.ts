@@ -1,10 +1,8 @@
 
 import decomp from "poly-decomp";
 import { Engine, Render, Bodies, World, Svg, Vertices, Mouse, MouseConstraint } from "matter-js";
-import logoPath from "./logo.svg";
-// import boxPath from "./box.svg";
+import logoPath from "./logo-display.svg";
 import "pathseg";
-import Bounds from "matter-js/src/geometry/Bounds";
 
 window.decomp = decomp;
 
@@ -19,6 +17,27 @@ const render = Render.create({
     height: window.innerHeight
   }
 });
+
+engine.world.gravity = { x: 0, y: 0, scale: 0 };
+
+var mouse = Mouse.create(render.canvas),
+  mouseConstraint = MouseConstraint.create(engine, {
+    mouse: mouse,
+    constraint: {
+      stiffness: 0.2,
+      render: {
+        visible: false
+      }
+    }
+  });
+
+World.add(world, mouseConstraint);
+
+Engine.run(engine);
+Render.run(render);
+
+getLogo();
+
 
 async function getLogo() {
   const logoResponse = await fetch(logoPath);
@@ -69,36 +88,6 @@ async function getLogo() {
       World.add(engine.world, body);
     }
   }
-
-  // let vertexSets = [];
-  // for (let i = 0; i < paths.length; i++) {
-  //   console.log(paths);
-  //   
-  //   vertexSets.push(points);
-  // }
-
-
-
-  // World.add(engine.world,);
 }
 
-getLogo();
-engine.world.gravity = { x: 0, y: 0, scale: 0 };
 
-
-
-var mouse = Mouse.create(render.canvas),
-  mouseConstraint = MouseConstraint.create(engine, {
-    mouse: mouse,
-    constraint: {
-      stiffness: 0.2,
-      render: {
-        visible: false
-      }
-    }
-  });
-
-World.add(world, mouseConstraint);
-
-Engine.run(engine);
-Render.run(render);

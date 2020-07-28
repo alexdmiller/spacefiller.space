@@ -11141,8 +11141,8 @@ var Vector = _dereq_('../geometry/Vector');
 },{"../body/Composite":2,"../core/Common":14,"../core/Events":16,"../geometry/Bounds":26,"../geometry/Vector":28}]},{},[30])(30)
 });
 
-},{}],"logo.svg":[function(require,module,exports) {
-module.exports = "/logo.86ce68ea.svg";
+},{}],"logo-display.svg":[function(require,module,exports) {
+module.exports = "/logo-display.2e0cdca9.svg";
 },{}],"../node_modules/pathseg/pathseg.js":[function(require,module,exports) {
 // SVGPathSeg API polyfill
 // https://github.com/progers/pathseg
@@ -12154,8 +12154,7 @@ var poly_decomp_1 = __importDefault(require("poly-decomp"));
 
 var matter_js_1 = require("matter-js");
 
-var logo_svg_1 = __importDefault(require("./logo.svg")); // import boxPath from "./box.svg";
-
+var logo_display_svg_1 = __importDefault(require("./logo-display.svg"));
 
 require("pathseg");
 
@@ -12170,6 +12169,25 @@ var render = matter_js_1.Render.create({
     height: window.innerHeight
   }
 });
+engine.world.gravity = {
+  x: 0,
+  y: 0,
+  scale: 0
+};
+var mouse = matter_js_1.Mouse.create(render.canvas),
+    mouseConstraint = matter_js_1.MouseConstraint.create(engine, {
+  mouse: mouse,
+  constraint: {
+    stiffness: 0.2,
+    render: {
+      visible: false
+    }
+  }
+});
+matter_js_1.World.add(world, mouseConstraint);
+matter_js_1.Engine.run(engine);
+matter_js_1.Render.run(render);
+getLogo();
 
 function getLogo() {
   return __awaiter(this, void 0, void 0, function () {
@@ -12180,7 +12198,7 @@ function getLogo() {
         case 0:
           return [4
           /*yield*/
-          , fetch(logo_svg_1.default)];
+          , fetch(logo_display_svg_1.default)];
 
         case 1:
           logoResponse = _a.sent();
@@ -12246,27 +12264,7 @@ function getLogo() {
     });
   });
 }
-
-getLogo();
-engine.world.gravity = {
-  x: 0,
-  y: 0,
-  scale: 0
-};
-var mouse = matter_js_1.Mouse.create(render.canvas),
-    mouseConstraint = matter_js_1.MouseConstraint.create(engine, {
-  mouse: mouse,
-  constraint: {
-    stiffness: 0.2,
-    render: {
-      visible: false
-    }
-  }
-});
-matter_js_1.World.add(world, mouseConstraint);
-matter_js_1.Engine.run(engine);
-matter_js_1.Render.run(render);
-},{"poly-decomp":"../node_modules/poly-decomp/src/index.js","matter-js":"../node_modules/matter-js/build/matter.js","./logo.svg":"logo.svg","pathseg":"../node_modules/pathseg/pathseg.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"poly-decomp":"../node_modules/poly-decomp/src/index.js","matter-js":"../node_modules/matter-js/build/matter.js","./logo-display.svg":"logo-display.svg","pathseg":"../node_modules/pathseg/pathseg.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -12294,7 +12292,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53303" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62291" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
