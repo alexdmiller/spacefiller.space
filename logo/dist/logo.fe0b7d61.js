@@ -12191,7 +12191,7 @@ getLogo();
 
 function getLogo() {
   return __awaiter(this, void 0, void 0, function () {
-    var logoResponse, logoSource, parser, doc, letters, i, letter, sections, sectionBodies, _loop_1, j;
+    var logoResponse, logoSource, parser, doc, letters, i, letter, sections, sectionBodies, _loop_1, j, stiffness;
 
     return __generator(this, function (_a) {
       switch (_a.label) {
@@ -12257,8 +12257,9 @@ function getLogo() {
             }
 
             matter_js_1.World.add(engine.world, sectionBodies);
+            stiffness = 0.2;
 
-            switch (letter.id) {
+            switch (letter.classList[0]) {
               case "S":
                 matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
                   bodyA: sectionBodies[0],
@@ -12271,7 +12272,7 @@ function getLogo() {
                     x: -15,
                     y: -15
                   },
-                  stiffness: 0.2,
+                  stiffness: stiffness,
                   length: 0
                 }), matter_js_1.Constraint.create({
                   bodyA: sectionBodies[2],
@@ -12284,7 +12285,187 @@ function getLogo() {
                     x: 15,
                     y: -10
                   },
-                  stiffness: 0.2,
+                  stiffness: stiffness,
+                  length: 0
+                })]);
+                break;
+
+              case "P":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: -17,
+                    y: 0
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: 0,
+                    y: -15
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                })]);
+                break;
+
+              case "R":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: -17,
+                    y: 0
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: 0,
+                    y: -15
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[1],
+                  pointA: {
+                    x: 0,
+                    y: 5
+                  },
+                  bodyB: sectionBodies[2],
+                  pointB: {
+                    x: -17,
+                    y: -15
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                })]);
+                break;
+
+              case "A":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 10,
+                    y: -32
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: -10,
+                    y: -32
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: -3,
+                    y: 10
+                  },
+                  bodyB: sectionBodies[2],
+                  pointB: {
+                    x: -13,
+                    y: 0
+                  },
+                  stiffness: stiffness * 0.05,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[1],
+                  pointA: {
+                    x: 3,
+                    y: 10
+                  },
+                  bodyB: sectionBodies[2],
+                  pointB: {
+                    x: 13,
+                    y: 0
+                  },
+                  stiffness: stiffness * 0.05,
+                  length: 0
+                })]);
+                break;
+
+              case "E":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 0,
+                    y: -33
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: -15,
+                    y: 0
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 0,
+                    y: 33
+                  },
+                  bodyB: sectionBodies[2],
+                  pointB: {
+                    x: -15,
+                    y: 0
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 0,
+                    y: 0
+                  },
+                  bodyB: sectionBodies[3],
+                  pointB: {
+                    x: -12,
+                    y: 0
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                })]);
+                break;
+
+              case "F":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 0,
+                    y: -33
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: -15,
+                    y: 0
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                }), matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 0,
+                    y: 0
+                  },
+                  bodyB: sectionBodies[2],
+                  pointB: {
+                    x: -12,
+                    y: 0
+                  },
+                  stiffness: stiffness,
+                  length: 0
+                })]);
+                break;
+
+              case "L":
+                matter_js_1.World.add(engine.world, [matter_js_1.Constraint.create({
+                  bodyA: sectionBodies[0],
+                  pointA: {
+                    x: 0,
+                    y: 33
+                  },
+                  bodyB: sectionBodies[1],
+                  pointB: {
+                    x: -15,
+                    y: 0
+                  },
+                  stiffness: stiffness,
                   length: 0
                 })]);
                 break;
@@ -12326,7 +12507,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55482" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54320" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,6 +1,15 @@
-
 import decomp from "poly-decomp";
-import { Engine, Render, Bodies, World, Svg, Vertices, Mouse, MouseConstraint, Constraint } from "matter-js";
+import {
+  Engine,
+  Render,
+  Bodies,
+  World,
+  Svg,
+  Vertices,
+  Mouse,
+  MouseConstraint,
+  Constraint,
+} from "matter-js";
 import logoPath from "./logo-physics.svg";
 import "pathseg";
 
@@ -14,8 +23,8 @@ const render = Render.create({
   engine: engine,
   options: {
     width: window.innerWidth,
-    height: window.innerHeight
-  }
+    height: window.innerHeight,
+  },
 });
 
 engine.world.gravity = { x: 0, y: 0, scale: 0 };
@@ -26,9 +35,9 @@ var mouse = Mouse.create(render.canvas),
     constraint: {
       stiffness: 0.2,
       render: {
-        visible: false
-      }
-    }
+        visible: false,
+      },
+    },
   });
 
 World.add(world, mouseConstraint);
@@ -37,7 +46,6 @@ Engine.run(engine);
 Render.run(render);
 
 getLogo();
-
 
 async function getLogo() {
   const logoResponse = await fetch(logoPath);
@@ -60,7 +68,7 @@ async function getLogo() {
       }
 
       let center = { x: 0, y: 0 };
-      points.forEach(p => {
+      points.forEach((p) => {
         p.x += 300;
         p.y += 300;
 
@@ -70,20 +78,29 @@ async function getLogo() {
       center.x /= points.length;
       center.y /= points.length;
       console.log(i);
-      sectionBodies.push(Bodies.fromVertices(center.x, center.y, [points], {
-        render: {
-          fillStyle: "#556270",
-          strokeStyle: "#556270",
-          lineWidth: 2
-        },
-        isStatic: false,
-        collisionFilter: { group: -1 * (i + 1) }
-      }, true));
+      sectionBodies.push(
+        Bodies.fromVertices(
+          center.x,
+          center.y,
+          [points],
+          {
+            render: {
+              fillStyle: "#556270",
+              strokeStyle: "#556270",
+              lineWidth: 2,
+            },
+            isStatic: false,
+            collisionFilter: { group: -1 * (i + 1) },
+          },
+          true
+        )
+      );
     }
 
     World.add(engine.world, sectionBodies);
 
-    switch (letter.id) {
+    const stiffness = 0.2;
+    switch (letter.classList[0]) {
       case "S":
         World.add(engine.world, [
           Constraint.create({
@@ -91,23 +108,139 @@ async function getLogo() {
             pointA: { x: -15, y: 10 },
             bodyB: sectionBodies[2],
             pointB: { x: -15, y: -15 },
-            stiffness: 0.2,
-            length: 0
+            stiffness,
+            length: 0,
           }),
           Constraint.create({
             bodyA: sectionBodies[2],
             pointA: { x: 15, y: 15 },
             bodyB: sectionBodies[1],
             pointB: { x: 15, y: -10 },
-            stiffness: 0.2,
-            length: 0
-          })
+            stiffness,
+            length: 0,
+          }),
         ]);
-
+        break;
+      case "P":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: -17, y: 0 },
+            bodyB: sectionBodies[1],
+            pointB: { x: 0, y: -15 },
+            stiffness,
+            length: 0,
+          }),
+        ]);
+        break;
+      case "R":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: -17, y: 0 },
+            bodyB: sectionBodies[1],
+            pointB: { x: 0, y: -15 },
+            stiffness,
+            length: 0,
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[1],
+            pointA: { x: 0, y: 5 },
+            bodyB: sectionBodies[2],
+            pointB: { x: -17, y: -15 },
+            stiffness,
+            length: 0,
+          }),
+        ]);
+        break;
+      case "A":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 10, y: -32 },
+            bodyB: sectionBodies[1],
+            pointB: { x: -10, y: -32 },
+            stiffness,
+            length: 0,
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: -3, y: 10 },
+            bodyB: sectionBodies[2],
+            pointB: { x: -13, y: 0 },
+            stiffness: stiffness * 0.05,
+            length: 0,
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[1],
+            pointA: { x: 3, y: 10 },
+            bodyB: sectionBodies[2],
+            pointB: { x: 13, y: 0 },
+            stiffness: stiffness * 0.05,
+            length: 0,
+          }),
+        ]);
+        break;
+      case "E":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 0, y: -33 },
+            bodyB: sectionBodies[1],
+            pointB: { x: -15, y: 0 },
+            stiffness,
+            length: 0,
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 0, y: 33 },
+            bodyB: sectionBodies[2],
+            pointB: { x: -15, y: 0 },
+            stiffness,
+            length: 0,
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 0, y: 0 },
+            bodyB: sectionBodies[3],
+            pointB: { x: -12, y: 0 },
+            stiffness,
+            length: 0,
+          }),
+        ]);
+        break;
+      case "F":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 0, y: -33 },
+            bodyB: sectionBodies[1],
+            pointB: { x: -15, y: 0 },
+            stiffness,
+            length: 0,
+          }),
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 0, y: 0 },
+            bodyB: sectionBodies[2],
+            pointB: { x: -12, y: 0 },
+            stiffness,
+            length: 0,
+          }),
+        ]);
+        break;
+      case "L":
+        World.add(engine.world, [
+          Constraint.create({
+            bodyA: sectionBodies[0],
+            pointA: { x: 0, y: 33 },
+            bodyB: sectionBodies[1],
+            pointB: { x: -15, y: 0 },
+            stiffness,
+            length: 0,
+          }),
+        ]);
         break;
     }
-
   }
 }
-
-
