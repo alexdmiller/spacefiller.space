@@ -9,6 +9,9 @@ import {
   Mouse,
   MouseConstraint,
   Constraint,
+  Events,
+  Vector,
+  Body,
 } from "matter-js";
 import logoPath from "./logo-physics.svg";
 import "pathseg";
@@ -29,16 +32,16 @@ const render = Render.create({
 
 engine.world.gravity = { x: 0, y: 0, scale: 0 };
 
-var mouse = Mouse.create(render.canvas),
-  mouseConstraint = MouseConstraint.create(engine, {
-    mouse: mouse,
-    constraint: {
-      stiffness: 0.2,
-      render: {
-        visible: false,
-      },
+const mouse = Mouse.create(render.canvas);
+const mouseConstraint = MouseConstraint.create(engine, {
+  mouse: mouse,
+  constraint: {
+    stiffness: 0.2,
+    render: {
+      visible: false,
     },
-  });
+  },
+});
 
 World.add(world, mouseConstraint);
 
@@ -69,15 +72,11 @@ async function getLogo() {
 
       let center = { x: 0, y: 0 };
       points.forEach((p) => {
-        p.x += 300;
-        p.y += 300;
-
         center.x += p.x;
         center.y += p.y;
       });
       center.x /= points.length;
       center.y /= points.length;
-      console.log(i);
       sectionBodies.push(
         Bodies.fromVertices(
           center.x,
@@ -91,6 +90,7 @@ async function getLogo() {
             },
             isStatic: false,
             collisionFilter: { group: -1 * (i + 1) },
+            frictionAir: 0.1,
           },
           true
         )
@@ -100,6 +100,7 @@ async function getLogo() {
     World.add(engine.world, sectionBodies);
 
     const stiffness = 0.2;
+
     switch (letter.classList[0]) {
       case "S":
         World.add(engine.world, [
@@ -244,3 +245,16 @@ async function getLogo() {
     }
   }
 }
+
+Events.on(engine, "tick", () => {
+  const target = Vector.create(window.innerWidth / 2, window.innerHeight / 2);
+  engine.world.bodies.forEach((body) => {
+    let r = Vector.sub(target, body.position);
+    if (Vector.magnitude(r) > 50) {
+      r = Vector.mult(r, 0.00001);
+    } else {
+      r = Vector.mult(r, -0.0001);
+    }
+    Body.applyForce(body, body.position, r);
+  });
+});

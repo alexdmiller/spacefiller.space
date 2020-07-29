@@ -12174,8 +12174,8 @@ engine.world.gravity = {
   y: 0,
   scale: 0
 };
-var mouse = matter_js_1.Mouse.create(render.canvas),
-    mouseConstraint = matter_js_1.MouseConstraint.create(engine, {
+var mouse = matter_js_1.Mouse.create(render.canvas);
+var mouseConstraint = matter_js_1.MouseConstraint.create(engine, {
   mouse: mouse,
   constraint: {
     stiffness: 0.2,
@@ -12231,14 +12231,11 @@ function getLogo() {
                 y: 0
               };
               points.forEach(function (p) {
-                p.x += 300;
-                p.y += 300;
                 center.x += p.x;
                 center.y += p.y;
               });
               center.x /= points.length;
               center.y /= points.length;
-              console.log(i);
               sectionBodies.push(matter_js_1.Bodies.fromVertices(center.x, center.y, [points], {
                 render: {
                   fillStyle: "#556270",
@@ -12248,7 +12245,8 @@ function getLogo() {
                 isStatic: false,
                 collisionFilter: {
                   group: -1 * (i + 1)
-                }
+                },
+                frictionAir: 0.1
               }, true));
             };
 
@@ -12479,6 +12477,21 @@ function getLogo() {
     });
   });
 }
+
+matter_js_1.Events.on(engine, "tick", function () {
+  var target = matter_js_1.Vector.create(window.innerWidth / 2, window.innerHeight / 2);
+  engine.world.bodies.forEach(function (body) {
+    var r = matter_js_1.Vector.sub(target, body.position);
+
+    if (matter_js_1.Vector.magnitude(r) > 50) {
+      r = matter_js_1.Vector.mult(r, 0.00001);
+    } else {
+      r = matter_js_1.Vector.mult(r, -0.0001);
+    }
+
+    matter_js_1.Body.applyForce(body, body.position, r);
+  });
+});
 },{"poly-decomp":"../node_modules/poly-decomp/src/index.js","matter-js":"../node_modules/matter-js/build/matter.js","./logo-physics.svg":"logo-physics.svg","pathseg":"../node_modules/pathseg/pathseg.js"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -12507,7 +12520,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54320" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56623" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
